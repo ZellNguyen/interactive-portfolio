@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio | ON - Studio</title>
+<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="javascript/mobile_menu_script.js" type="text/javascript">
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+<script src="http://use.edgefonts.net/pt-sans.js"></script>
+<script src="http://use.edgefonts.net/eb-garamond.js"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header>
+    <a href="index.html"><div class="logo"></div></a>
+    <nav>
+      <ul>
+        <li><a href="https://medium.com/@hoa_nguyen" target="_blank">Blog</a></li>
+        <li><a href="https://github.com/ZellNguyen" target="_blank">Github</a></li>
+      </ul>
+      <img src="images/menu.png" id="menu">
+    </nav>
+  </header>
+  
+  <section class="menu_list">
+  	<ul>
+   		<li><a id="portfolio_button" class="menu_button">Portfolio</a></li>
+   		<li><a href="gallery.html" class="menu_button">Gallery</a></li>
+    	<li><a href="https://medium.com/@hoa_nguyen" target="_blank" class="menu_button">Blog</a></li>
+        <li><a href="https://github.com/ZellNguyen" target="_blank" class="menu_button">Github</a></li>
+    </ul>
+  </section>
+  
+  <section class="article">
+  	<div class="article_cover">
+  		<h1 class="article_title">ON Studio - The Rookie</h1>
+  		<img src="images/on-studio/on-thumbnail.png" class="article_thumbnail">
+  	</div>
+  	
+  	<div class="article_body">
+		<!-- Introduction -->
+		<h4 class="article_header">Introduction</h4>
+		<p><strong>On Studio - The Rookie </strong>was an industry project in the second term of the Master of Digital Media Program. Our mission is to expand the boundaries of VR by creating a public narrative experience in a physically immersive environment.</p>
+		<img src="images/on-studio/on-chart.png" class="article_image">
+
+		<!-- Challenge -->
+		<h4 class="article_header">The Challenge</h4>
+		<p>The goal of the project was to create a public VR experience that combines motion simulation and normal walking. As it was a new topic in VR, I was in charge of researching and experimenting all the techniques that could tackle the current technical constraints, in order to enable the design of the experience. Additionally, I was also responsible for building an efficient environment and pipeline for the programming team during the project. </p>
+		
+		<h4 class="article_header">Development Process</h4>
+		<img src="images/on-studio/on-pipeline.png" class="article_image">
+		<h3 class="image_caption">Production Pipeline</h3>
+		<p>Our team followed the Agile Development process, in which we rapidly experimented, prototyped, tested and iterated. </p>
+		<p>Aside from being a programmer, my role in the development process was also managing the pipeline and the communication between the programmers and other members in the team, in order to ensure that the development could run smoothly and rapidly as we planned.</p>
+		<p>The pipeline and rules of play I designed for the programming team can be found <a href="https://medium.com/@hoa_nguyen/first-step-to-build-a-good-agile-programming-team-c5853713581f" target="_blank">here</a>.</p>
+		
+		<h4 class="article_header">Development tools and devices</h4>
+		<p><i><strong>The Rookie</strong></i> was developed by Unity 5.6 Personal Version, using C# as the main programming language. We also used Gitlab as the main source control for the project.</p>
+		<p>The project was also a chance for us to learn about and experiment with some new devices, such as HTC Vive, Kinect, Leap Motion, and Arduino, as well as how to integrate them into VR Unity.</p>
+		<img src="images/on-studio/on-test1.jpg" class="article_image">
+		<h3 class="image_caption">The first technical test with the client.</h3>
+		
+		<h4 class="article_header">Motion Simulation</h4>
+		<p>Different to most of the current VR games, we didn't use the Vive Controllers to control the movement. Instead, we embedded a racing wheel and a joystick into the experience to give the users an immersion of motion simulation.</p>
+		<img src="images/on-studio/on-test2.png" class="article_image">
+		<h3 class="image_caption">The user controlling the spaceship by two levers.</h3>
+		<p>Additionally, after some tests, we also found out that motion sickness was another big problem we had to solve in VR motion simulation. We minimized the motion sickness through gradual acceleration, limited rotations of movement, a view of the horizon, and limiting the user’s view with a vignette effect as well as a reduced view through the vehicle’s window of their moving environment.</p>
+		
+		<h4 class="article_header">Object Interaction</h4>
+		<p>In the walking part of <i><strong>The Rookie</strong></i>, we needed to have the players be able to interact with the physical objects. We researched and came up with some solutions using the Vive trackers to match the physical interactable objects with its virtual 3D model. However, due to the low budget of the prototyping phase, we decided to attach the existing Vive controllers with the objects in order to make them trackable by the HTC Vive Lighthouses.</p>
+		<img src="images/on-studio/on-work1.png" class="article_image">
+		<h3 class="image_caption">An experiment with Leap Motion in VR object interaction.</h3>
+		<p>We also experimented with Leap Motion, for the purpose of giving the user their hands avatar that can provide them a better depth perception in VR world. However, the test pointed out the hands tracked by the Leap Motion didn't allign accurately with the virtual objects. Therefore, we decided not to use it for the final prototype.</p>
+		<p>Finally, the most difficult technical challenge we coped with was the calibration of the Vive controllers. Since the experience is the combination of the virtual and physical world, we needed to have the virtual objects match perfectly with the physical sets we built. However, the Vive controllers don't provide the accurate and stable tracking position, which means that everytime the Vive system is reset, the controllers appear in a different position than it was before. We tackled this problem by writing a script in Unity that fixes the initial position of the Vive controllers in the virtual world, and caches it everytime the system is reset. </p>
+		
+		<h4 class="article_header">Team Members</h4>
+		<img src="images/on-studio/on-members.png" class="article_image">
+		
+		<h4 class="article_header">Special Thanks To</h4>
+		<ul>
+			<li>Jonathan Dowdeswell, LFE System (Client)</li>
+			<li>Patrick Pennefather (Advisor)</li>
+			<p>---</p>
+			<li>Arts Club Theatre Company (Set construction, costumes)</li>
+			<li>Jon Festinger (Joystick)</li>
+			<li>Ace Martens (Construction, Hook ups)</li>
+			<li>Mark Lange & Josh Miller (IT Heroes)</li>
+			<li>All the testers</li>
+		</ul>
+		<p><i>Due to the NDA with the clients, the details and the source code of the project cannot be published.</i></p>
+  	</div>
+  </section>
+
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2017 - <strong>Hoa Nguyen</strong></div>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>
